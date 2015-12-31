@@ -1,0 +1,56 @@
+﻿生成启动时间为 2015/8/26 13:55:06。
+     1>项目“D:\Project\AIR_SCANER\osgPC\osgPC\osgPC.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\osgPC.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D OSG_LIBRARY /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\osgPCd.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt PointCloudProtocal.cpp
+         PointCloudProtocal.cpp
+     1>d:\project\air_scaner\osgpc\osgpc\pointcloudprotocal.h(31): warning C4305: “参数”: 从“double”到“osg::Vec3f::value_type”截断
+     1>d:\project\air_scaner\osgpc\osgpc\pointcloudprotocal.h(31): warning C4305: “参数”: 从“double”到“osg::Vec3f::value_type”截断
+     1>d:\project\air_scaner\osgpc\osgpc\pointcloudprotocal.h(31): warning C4305: “参数”: 从“double”到“osg::Vec3f::value_type”截断
+     1>d:\project\air_scaner\osgpc\osgpc\pointcloudprotocal.h(33): warning C4305: “参数”: 从“double”到“osg::Vec3f::value_type”截断
+     1>d:\project\air_scaner\osgpc\osgpc\pointcloudprotocal.h(33): warning C4305: “参数”: 从“double”到“osg::Vec3f::value_type”截断
+     1>d:\project\air_scaner\osgpc\osgpc\pointcloudprotocal.h(35): warning C4305: “参数”: 从“double”到“osg::Vec3f::value_type”截断
+     1>d:\project\air_scaner\osgpc\osgpc\pointcloudprotocal.h(35): warning C4305: “参数”: 从“double”到“osg::Vec3f::value_type”截断
+     1>d:\project\air_scaner\osgpc\osgpc\pointcloudprotocal.h(35): warning C4305: “参数”: 从“double”到“osg::Vec3f::value_type”截断
+     1>d:\project\air_scaner\osgpc\osgpc\pointcloudprotocal.h(37): warning C4305: “参数”: 从“double”到“osg::Vec3f::value_type”截断
+     1>d:\project\air_scaner\osgpc\osgpc\pointcloudprotocal.h(37): warning C4305: “参数”: 从“double”到“osg::Vec3f::value_type”截断
+     1>d:\project\air_scaner\osgpc\osgpc\pointcloudprotocal.h(37): warning C4305: “参数”: 从“double”到“osg::Vec3f::value_type”截断
+     1>d:\project\air_scaner\osgpc\osgpc\pointcloudprotocal.h(43): warning C4305: “参数”: 从“double”到“osg::Vec3f::value_type”截断
+     1>d:\project\air_scaner\osgpc\osgpc\pointcloudprotocal.h(43): warning C4305: “参数”: 从“double”到“osg::Vec3f::value_type”截断
+     1>d:\project\air_scaner\osgpc\osgpc\pointcloudprotocal.h(74): warning C4099: “Loki::CreateUsingNew”: 类型名称以前使用“struct”现在使用的是“class”
+                 d:\source\loki-0.1.7\include\loki\singleton.h(231) : 参见“Loki::CreateUsingNew”的声明
+     1>d:\project\air_scaner\osgpc\osgpc\pointcloudprotocal.h(80): warning C4099: “Loki::DefaultLifetime”: 类型名称以前使用“struct”现在使用的是“class”
+                 d:\source\loki-0.1.7\include\loki\singleton.h(353) : 参见“Loki::DefaultLifetime”的声明
+     1>d:\project\air_scaner\osgpc\osgpc\pointcloudprotocal.cpp(11): warning C4129: “Z”: 不可识别的字符转义序列
+     1>d:\project\air_scaner\osgpc\osgpc\pointcloudprotocal.cpp(73): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdlib.h(451) : 参见“_itoa”的声明
+     1>d:\project\air_scaner\osgpc\osgpc\pointcloudprotocal.cpp(121): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\project\air_scaner\osgpc\osgpc\pointcloudprotocal.cpp(128): warning C4018: “<”: 有符号/无符号不匹配
+         所有输出均为最新。
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Project\AIR_SCANER\osgPC\Debug\osgPCd.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\osgPCd.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Project\AIR_SCANER\osgPC\Debug\osgPCd.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Project\AIR_SCANER\osgPC\Debug\osgPCd.lib" /MACHINE:X86 /DLL Debug\osgPCd.dll.embed.manifest.res
+         Debug\DisplayModeNodeVisitor.obj
+         Debug\dllmain.obj
+         Debug\PointCloudDrawable.obj
+         Debug\PointCloudProtocal.obj
+         Debug\stdafx.obj
+         Debug\SwitchNodeVisitor.obj
+         Debug\utility.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\osgPCd.dll.embed.manifest" /manifest Debug\osgPCd.dll.intermediate.manifest
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         osgPC.vcxproj -> D:\Project\AIR_SCANER\osgPC\Debug\osgPCd.dll
+       FinalizeBuildStatus:
+         正在删除文件“Debug\osgPC.unsuccessfulbuild”。
+         正在对“Debug\osgPC.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\Project\AIR_SCANER\osgPC\osgPC\osgPC.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:07.84
