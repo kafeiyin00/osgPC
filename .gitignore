@@ -26,6 +26,11 @@ $RECYCLE.BIN/
 *.obj
 *.suo
 *.sdf
+*.pch
+*.obj
+*.log
+*.tlog
+*.data
 
 # =========================
 # Operating System Files
