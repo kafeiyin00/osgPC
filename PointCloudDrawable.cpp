@@ -81,7 +81,7 @@ void PointCloudGeometry::refreshDisplayMode(osgPC::pointColorMode cm)
 
 void PointCloudGeometry::setColorsByAssignColor()
 {
-	osg::Vec3 assignColor(100,100,100);
+	osg::Vec3 assignColor(0.6,0.6,0.6);
 	int count = _points->size();
 	osg::ref_ptr<osg::Vec3Array> currentColors = new osg::Vec3Array();
 	currentColors->push_back(assignColor);

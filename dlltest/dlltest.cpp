@@ -14,11 +14,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	std::string filename;
 	std::cin >> filename;
 	osgPC::ShareDataSingleton::Instance()->setColorMode(osgPC::pointColorMode::ASSIGNED);
-	osg::ref_ptr<osgPC::PointCloudGeometry> pcg =
-		dynamic_cast<osgPC::PointCloudGeometry*>(osgDB::readNodeFile(filename));
-	osg::ref_ptr<osg::Geode> geode = new osg::Geode;
+	osg::ref_ptr<osg::Geode> geode = dynamic_cast<osg::Geode*>(osgDB::readNodeFile(filename));
 	osg::ref_ptr<osg::Group> root = new osg::Group;
-	geode->addChild(pcg.get());
 	root->addChild(geode.get());
 
 	osg::ref_ptr<osgPC::ColorModeVisitor> vistor = new osgPC::ColorModeVisitor();
