@@ -1,5 +1,6 @@
 #pragma once
 #include "utility.h"
+#include "ShareDataSingleton.h"
 
 #include <osg/Drawable>
 #include <osg/RenderInfo>
@@ -33,18 +34,25 @@ public:
     osg::Vec3d	getOffset() const { return _offset; }
 	Bounds3d	getBound() const { return _bounds; }
 	unsigned short*	getIntensities() const { return _intensities; }
+
+	void refreshDisplayMode(osgPC::pointColorMode cm);
 	
 protected:
     ~PointCloudGeometry(void);
 
 private:
+	void setColorsByAssignColor();
+	void setColorsByTexture();
+	void setColorsByHeight();
+	void setColorByClass();
+	void setColorsByIntensity();
+
     osg::ref_ptr<osg::Vec3Array>    _points;
     osg::ref_ptr<osg::Vec3Array>    _texColors;
 	osg::ref_ptr<osg::Vec3Array>	_assignColors;
     Bounds3d			            _bounds;
     unsigned short*		            _intensities;
     osg::Vec3                       _offset;
-	//OBJECTCLASS						_c;
 	OBJECTCLASS*					_cs;
 };
 
