@@ -33,6 +33,7 @@ $RECYCLE.BIN/
 *.data
 *.manifest
 *.idb
+*.cache
 
 # =========================
 # Operating System Files
