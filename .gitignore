@@ -31,6 +31,8 @@ $RECYCLE.BIN/
 *.log
 *.tlog
 *.data
+*.manifest
+*.idb
 
 # =========================
 # Operating System Files

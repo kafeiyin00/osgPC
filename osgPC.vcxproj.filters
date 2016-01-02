@@ -33,6 +33,12 @@
     <ClInclude Include="ColorRamp.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ShareDataSingleton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorModeVisitor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -45,6 +51,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="utility.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ShareDataSingleton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorModeVisitor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

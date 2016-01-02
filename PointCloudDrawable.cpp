@@ -29,10 +29,8 @@ void PointCloudGeometry::setPointCloud(osg::Vec3Array* points, const Bounds3d& b
     _intensities = intensities;
     _offset = offset;
 	_cs = c;
-    //_assignColors = new osg::Vec3Array(_points->size());
     setVertexArray(_points);
     addPrimitiveSet(new osg::DrawArrays(GL_POINTS, 0, _points->size()));
-    //setColorArray(texColors);
 	if (_texColors != nullptr)
 	{
 		int count = _points->size();
@@ -55,5 +53,65 @@ PointCloudGeometry::~PointCloudGeometry(void)
         delete _intensities;
 	if (_cs != nullptr)
 		delete _cs;
+}
+
+void PointCloudGeometry::refreshDisplayMode(osgPC::pointColorMode cm)
+{
+	switch (cm)
+	{
+	case osgPC::pointColorMode::HEIGHT:
+		setColorsByHeight();
+		break;
+	case osgPC::pointColorMode::INTENSITY:
+		setColorsByIntensity();
+		break;
+	case osgPC::pointColorMode::ASSIGNED:
+		setColorsByAssignColor();
+		break;
+	case osgPC::pointColorMode::RGB:
+		setColorsByTexture();
+		break;
+	case osgPC::pointColorMode::CLASS:
+		setColorByClass();
+		break;
+	default:
+		return;
+	}
+}
+
+void PointCloudGeometry::setColorsByAssignColor()
+{
+	osg::Vec3 assignColor(100,100,100);
+	int count = _points->size();
+	osg::ref_ptr<osg::Vec3Array> currentColors = new osg::Vec3Array();
+	currentColors->push_back(assignColor);
+	_assignColors = currentColors;
+	setColorArray(_assignColors);
+	setColorBinding(osg::Geometry::BIND_OVERALL);
+}
+void PointCloudGeometry::setColorsByTexture()
+{
+	if (_texColors == nullptr)
+		return;
+	int count = _points->size();
+	osg::ref_ptr<osg::Vec3Array> currentColors = new osg::Vec3Array(count);
+	for (int i = 0; i < count; ++i)
+	{
+		(*currentColors)[i] = _texColors->at(i);
+	}
+	setColorArray(currentColors);
+	setColorBinding(osg::Geometry::BIND_PER_VERTEX);
+}
+void PointCloudGeometry::setColorsByHeight()
+{
+
+}
+void PointCloudGeometry::setColorByClass()
+{
+
+}
+void PointCloudGeometry::setColorsByIntensity()
+{
+
 }
 
